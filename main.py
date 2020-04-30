@@ -24,7 +24,7 @@ def main():
                 proc = max(psutil.cpu_percent(interval=1, percpu=True))  # get most loaded core
                 ram = psutil.virtual_memory().used/psutil.virtual_memory().total*100  # percents of ram using
                 now = datetime.datetime.now()  # now time
-                ser.write(str(str(int(proc)) + ' ').encode())
+                ser.write(str(str(int(proc)) + ' ').encode())  # need to refactor
                 ser.write(str(str(int(ram)) + ' ').encode())
                 ser.write(str(str(int(now.hour)) + ' ').encode())
                 ser.write(str(int(now.minute)).encode())
