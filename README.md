@@ -7,7 +7,7 @@ pip install -r requirements.txt
 ```
 2. Make devise (you can use anything else board and monitor)![alt-text](http://wiki.amperka.ru/_media/products:display-lcd-text-16x2:display-lcd-text-16x2-arduino-wiring.png)
 3. Configure and load firmware
-4. To get root to serial port use:
+4. Get root to serial port:
 ```bash
 sudo chmod a+rw /dev/YOUR-PORT-NAME(for example USB0)
 ```
